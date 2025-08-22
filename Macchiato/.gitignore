@@ -2,6 +2,10 @@
 # .NET Core / ASP.NET Core
 # ------------------------------
 
+.vs/
+*.suo
+*.user
+
 # Build artifacts
 bin/
 obj/
