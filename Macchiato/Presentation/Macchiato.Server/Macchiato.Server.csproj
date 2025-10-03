@@ -22,7 +22,7 @@
     <ProjectReference Include="..\..\Application\Macchiato.Application\Macchiato.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Macchiato.Infrastructure\Macchiato.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Macchiato.ServiceDefaults\Macchiato.ServiceDefaults.csproj" />
-    <ProjectReference Include="..\macchiato.client\macchiato.client.esproj">
+    <ProjectReference Include="..\macchiato.client\Macchiato.Dashboard.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
