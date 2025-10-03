@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\Macchiato.Application\Macchiato.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\Macchiato.Domain\Macchiato.Domain.csproj" />
   </ItemGroup>
 
 </Project>
