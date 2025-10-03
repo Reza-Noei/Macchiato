@@ -1,3 +1,8 @@
+using Macchiato.Application.Abstractions;
+using Macchiato.Application.Commands.Servers;
+using Macchiato.Infrastructure;
+using Mediator.Net;
+using Mediator.Net.MicrosoftDependencyInjection;
 
 namespace Macchiato.Server;
 
@@ -7,6 +12,20 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.AddServiceDefaults();
+
+        var mediaBuilder = new MediatorBuilder();
+        var mediator = mediaBuilder.RegisterHandlers(typeof(CreateCommand).Assembly).Build();
+
+        builder.Services.RegisterMediator(mediaBuilder);
+        builder.Services.AddScoped<IServerRepository, ServerRepository>();
+        builder.Services.AddAutoMapper(P =>
+        {
+            P.AddProfile<MappingProfile>();
+        });
+
+        Directory.CreateDirectory("Servers");
+
+        builder.Services.AddDistributedMemoryCache();
 
         // Add services to the container.
 

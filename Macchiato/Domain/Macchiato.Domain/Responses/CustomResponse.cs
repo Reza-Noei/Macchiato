@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Macchiato.Domain.Responses
+﻿namespace Macchiato.Domain.Responses
 {
     public class CustomResponse : HttpResponse
     {
-        public override string ContentType { get; set; }
+        public override string ContentType { get; }
 
         public CustomResponse(string contentType)
         {

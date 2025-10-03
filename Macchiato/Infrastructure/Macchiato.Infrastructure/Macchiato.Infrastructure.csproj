@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="15.0.1" />
-    <PackageReference Include="Mediator.Net" Version="4.9.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Macchiato.Domain\Macchiato.Domain.csproj" />
+    <ProjectReference Include="..\..\Application\Macchiato.Application\Macchiato.Application.csproj" />
   </ItemGroup>
 
 </Project>

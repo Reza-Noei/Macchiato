@@ -10,17 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mediator.Net.MicrosoftDependencyInjection" Version="4.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	<PackageReference Include="Mediator.Net" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\Macchiato.Application\Macchiato.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Macchiato.Infrastructure\Macchiato.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Macchiato.ServiceDefaults\Macchiato.ServiceDefaults.csproj" />
     <ProjectReference Include="..\macchiato.client\macchiato.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\Macchiato.ServiceDefaults\Macchiato.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

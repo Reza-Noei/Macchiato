@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\macchiato.client\macchiato.client.esproj" />
-    <ProjectReference Include="..\Macchiato.Server\Macchiato.Server.csproj" />
+    <ProjectReference Include="..\Presentation\macchiato.client\macchiato.client.esproj" />
+    <ProjectReference Include="..\Presentation\Macchiato.Server\Macchiato.Server.csproj" />
   </ItemGroup>
 
 </Project>

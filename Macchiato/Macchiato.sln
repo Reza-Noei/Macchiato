@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macchiato.Server", "Macchiato.Server\Macchiato.Server.csproj", "{0FFCB019-5430-4628-ACA3-33405AB51EAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macchiato.Server", "Presentation\Macchiato.Server\Macchiato.Server.csproj", "{0FFCB019-5430-4628-ACA3-33405AB51EAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macchiato.AppHost", "Macchiato.AppHost\Macchiato.AppHost.csproj", "{14211372-FFC3-48BC-B974-AE44ADDEA4FD}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "macchiato.client", "Presentation\macchiato.client\macchiato.client.esproj", "{4667E7FB-0FC5-438B-AC36-87D23575F5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macchiato.AppHost", "Macchiato.AppHost\Macchiato.AppHost.csproj", "{14211372-FFC3-48BC-B974-AE44ADDEA4FD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macchiato.ServiceDefaults", "Macchiato.ServiceDefaults\Macchiato.ServiceDefaults.csproj", "{0617920D-D5F2-46F1-8BB6-9D901F6E1B60}"
-EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "macchiato.client", "macchiato.client\macchiato.client.esproj", "{4667E7FB-0FC5-438B-AC36-87D23575F5E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{2D17B8DE-03CE-4B58-B1EA-25A364798B7C}"
 EndProject
@@ -20,6 +20,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E72F00DF-1AE1-40F9-9695-DB7BC8B55390}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macchiato.Application", "Application\Macchiato.Application\Macchiato.Application.csproj", "{68F4F430-FB64-4446-9719-6770DA0E8C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macchiato.Infrastructure", "Infrastructure\Macchiato.Infrastructure\Macchiato.Infrastructure.csproj", "{E5D6F348-4EBD-4851-B810-7F69A731E6F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,13 +57,25 @@ Global
 		{68F4F430-FB64-4446-9719-6770DA0E8C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68F4F430-FB64-4446-9719-6770DA0E8C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F4F430-FB64-4446-9719-6770DA0E8C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D6F348-4EBD-4851-B810-7F69A731E6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D6F348-4EBD-4851-B810-7F69A731E6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D6F348-4EBD-4851-B810-7F69A731E6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D6F348-4EBD-4851-B810-7F69A731E6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F14E6F-A868-49C6-BA04-7CA3530DCFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F14E6F-A868-49C6-BA04-7CA3530DCFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F14E6F-A868-49C6-BA04-7CA3530DCFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F14E6F-A868-49C6-BA04-7CA3530DCFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{0FFCB019-5430-4628-ACA3-33405AB51EAB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4667E7FB-0FC5-438B-AC36-87D23575F5E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6FFEE6C7-2C44-410E-A0AF-37AADF0B1AF9} = {2D17B8DE-03CE-4B58-B1EA-25A364798B7C}
 		{68F4F430-FB64-4446-9719-6770DA0E8C81} = {075F952A-2C7B-491E-899D-141732B4D12A}
+		{E5D6F348-4EBD-4851-B810-7F69A731E6F2} = {E72F00DF-1AE1-40F9-9695-DB7BC8B55390}
+		{35F14E6F-A868-49C6-BA04-7CA3530DCFE6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B34F8DE-64F5-4B81-B441-8A77FE4F3A20}
