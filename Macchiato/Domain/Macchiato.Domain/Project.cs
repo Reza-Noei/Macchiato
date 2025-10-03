@@ -11,5 +11,7 @@
         public DateTime CreatedAt { get; private set; }
 
         public bool IsDeleted { get; private set; }
+
+        public ICollection<Endpoint> Endpoints { get; private set; }
     }
 }
